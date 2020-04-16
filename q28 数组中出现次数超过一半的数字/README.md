@@ -4,7 +4,7 @@
 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。
 
 ## 题目总结
-最简单直接的方法，丢进map中然后逐个计数，然后找到计数大于一半的那个，但问题是需要另开存储空间：
+最简单直接的方法，丢进map中然后逐个计数，然后找到计数大于一半的那个，时间复杂度为$O(NLogN)$, 空间复杂度为$O(N)$：
 ```c
 int MoreThanHalfNum_Solution(vector<int> numbers) {
     if (numbers.size() == 0)
@@ -85,5 +85,59 @@ int MoreThanHalfNum_Solution(vector<int> numbers) {
     return 0;
 }
 ```
+
+但其实可以用$O(N)$的时间复杂度和$O(1)$的空间复杂度解决问题，利用快排中的partition去吧比中位数大的全放左边，比中位数大的全放右边，最后检查中位数的个数是否大于总数的一半就好
+```c
+int MoreThanHalfNum_Solution(vector<int> numbers) {
+    if (numbers.size() == 0) return 0;
+    int mid = numbers.size() >> 1;
+    int start = 0;
+    int end = numbers.size() - 1;
+    int pivot = partition(numbers, start, end);
+    while (pivot != mid) {
+        if (pivot < mid) {
+            start = pivot + 1;
+        } else {
+            end = pivot - 1;
+        }
+        pivot = partition(numbers, start, end);
+    }
+    int result = numbers[mid];
+    int count = 0;
+    for (int num : numbers) {
+        if (result == num) {
+            count++;
+        }
+    }
+    return count > mid ? result : 0;
+}
+```
+
+可是这样改变了数组，最厉害的方法是一个很巧妙的方法，因为要找到一个数比其他数的总数都要大，所以我们可以通过遍历一次数组，保存一个数字和它的次数，次数遇到同一个数字加1，反之减一，为0就更新数字为新的数。
+```
+int MoreThanHalfNum_Solution(vector<int> numbers) {
+    if (numbers.size() == 0) return 0;
+    int num = numbers[0];
+    int count = 1;
+    for (int i = 1; i < numbers.size(); i++) {
+        if (numbers[i] == num) {
+            count++;
+        } else {
+            count--;
+            if (count == 0) {
+                num = numbers[i];
+                count = 1;
+            }
+        }
+    }
+    count = 0;
+    for (int x : numbers) {
+        if (x == num) count++;
+    }
+    
+    return count > (numbers.size() >> 1) ? num : 0;
+}
+```
+
 
 
