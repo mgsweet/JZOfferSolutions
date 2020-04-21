@@ -1,5 +1,9 @@
-# 剑指offer牛客网在线编程整理
-答案针对牛客网给出的[在线编程环境](https://www.nowcoder.com/ta/coding-interviews)
+# Fight for offers!
+This repo is mainly used to record the effort I make for getting an offer.
 
-同时给出了c++和java的答案，也给了自己在题中的总结，主要目的是练习使用JAVA及C++解答面试题的能力。
+## Coding everyday challenge!
+The repo contains my solutions and reviews of the algorithm tests I did every day.
+
+## Learning and review!
+The knowledge of computer science and IT would be easily forgotten if no review were provided. Also, the ability to learn quickly in life is important in this rapidly changing society. Here, I would also record the knowledge I may need for getting offer.
 
