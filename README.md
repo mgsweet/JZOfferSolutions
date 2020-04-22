@@ -7,3 +7,6 @@ The repo contains my solutions and reviews of the algorithm tests I did every da
 ## Learning and review!
 The knowledge of computer science and IT would be easily forgotten if no review were provided. Also, the ability to learn quickly in life is important in this rapidly changing society. Here, I would also record the knowledge I may need for getting offer.
 
+## Type faster!
+Typing training website: [TypingClub](https://www.typingclub.com/)
+
