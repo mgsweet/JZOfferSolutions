@@ -14,3 +14,10 @@ Typing training website: [TypingClub](https://www.typingclub.com/)
 Code in a unified style. Also learn a lot from the [Google Style Guides](https://github.com/google/styleguide). Strongly recommand to spend a day to  understand it.
 
 But I don't really like the 2 spaces setting. Anyway, I would follow it.
+
+## Read more, learn more!
+Have no idea whether they have the copyright of those books, but I gain benefits from them:)
+
+* [CasterWx/free-programming-bookss](https://github.com/CasterWx/free-programming-books)
+* [7-sevens/Developer-Books](https://github.com/7-sevens/Developer-Books)
+
