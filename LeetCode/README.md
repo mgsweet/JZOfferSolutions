@@ -20,6 +20,10 @@ Read the question carefully! First you need to understand what the question is a
 
 use `to_string()` to make it easy.
 
+### 005
+
+string constructer:`string(const string &s, int pos, int n)`
+
 ### 007 
 
 1. **Mod** in `int`: $-7 % 10 = -7$ not equeals to 3.
