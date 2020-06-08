@@ -43,3 +43,8 @@ string constructer:`string(const string &s, int pos, int n)`
 
 1. Use `switch` instead of `unordered_map` to save memory.
 2. Think about the question upside down.
+
+### 189 [Rotate Array](https://leetcode.com/problems/rotate-array/)
+
+1. Can use reverse array to rotate array.
+2. Can use count in the `for` loop to simplify some logic.
