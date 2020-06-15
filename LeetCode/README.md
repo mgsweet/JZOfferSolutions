@@ -33,7 +33,7 @@ string constructer:`string(const string &s, int pos, int n)`
 1. use `max()` to simplify your code;
 2. Use the concept of sliding window.
 
-### 011[Container With Most Water](https://leetcode.com/problems/container-with-most-water) 
+### 011 [Container With Most Water](https://leetcode.com/problems/container-with-most-water) 
 
 1. Two pointer approach
 
@@ -45,6 +45,12 @@ string constructer:`string(const string &s, int pos, int n)`
 ### 107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 
 1. No need to create pair to record the tree depth if u only want to separate different depth node. Use `nullptr ` !
+
+### 112 [Path Sum](https://leetcode.com/problems/path-sum/)
+
+1. Can use `st` to represent stack;
+2. Can directly change the value in the node to record the sum.
+3. Better to use `stack st({root})` to initialize the stack.
 
 ### 148 [Sort List](https://leetcode.com/problems/sort-list/)
 
