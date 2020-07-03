@@ -42,6 +42,10 @@ string constructer:`string(const string &s, int pos, int n)`
 1. Use `switch` instead of `unordered_map` to save memory.
 2. Think about the question upside down.
 
+### 015 [3SUM](https://leetcode.com/problems/3sum/)
+
+1. Need to avoid writing something like ` i < nums.size() - 2`. Since `nums.size()` is unsigned, 0 - 2 will be a huge number.
+
 ### 107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 
 1. No need to create pair to record the tree depth if u only want to separate different depth node. Use `nullptr ` !
