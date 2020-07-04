@@ -16,6 +16,13 @@ Code in a unified style. Also learn a lot from the [Google Style Guides](https:/
 But I don't really like the 2 spaces setting. Anyway, I would follow it.
 
 ## Read more, learn more!
+
+### C++
+
+- [《C++ Primer Plus（第5版）》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/C++ Primer Plus（第5版）.pdf)
+- [《Effective C++中文版》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/Effective C++中文版.pdf)
+- [《C++并发编程指南》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/C++并发编程指南.pdf)
+
 Have no idea whether they have the copyright of those books, but I gain benefits from them:)
 
 * [CasterWx/free-programming-bookss](https://github.com/CasterWx/free-programming-books)
