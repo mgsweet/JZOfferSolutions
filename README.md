@@ -19,8 +19,8 @@ But I don't really like the 2 spaces setting. Anyway, I would follow it.
 
 ### C++
 
-- [《C++ Primer Plus（第5版）》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/C++ Primer Plus（第5版）.pdf)
-- [《Effective C++中文版》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/Effective C++中文版.pdf)
+- [《C++ Primer Plus（第5版）》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/C++%20Primer%20Plus%EF%BC%88%E7%AC%AC5%E7%89%88%EF%BC%89.pdf)
+- [《Effective C++中文版》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/Effective%20C++%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 - [《C++并发编程指南》](https://github.com/7-sevens/Developer-Books/blob/master/Cpp/C++并发编程指南.pdf)
 
 Have no idea whether they have the copyright of those books, but I gain benefits from them:)
