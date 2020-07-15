@@ -65,6 +65,10 @@ string constructer:`string(const string &s, int pos, int n)`
 
 1. Use Mergesort to achieve $O(NlogN)$ time using constant space complexity.
 
+### 172 [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)
+
+1. The caveat is that 25 has two five in factors, both of which should be counted, while 125 has three, etc.
+
 ### 189 [Rotate Array](https://leetcode.com/problems/rotate-array/)
 
 1. Can use reverse array to rotate array.
