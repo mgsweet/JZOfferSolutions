@@ -28,3 +28,14 @@ Have no idea whether they have the copyright of those books, but I gain benefits
 * [CasterWx/free-programming-bookss](https://github.com/CasterWx/free-programming-books)
 * [7-sevens/Developer-Books](https://github.com/7-sevens/Developer-Books)
 
+### Database
+
+- MySQL
+  - [MySQL YouTube Tutorial](https://www.youtube.com/watch?v=7S_tz1z_5bA), this tutorial can help you quickly learn or review the syntax using in MySQL.
+  - [LeetCode Database Problem Set](https://leetcode.com/problemset/database/)
+
+## Prepare for Interview!
+
+- Resume Template
+- Interview Questions
+
