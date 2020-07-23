@@ -4,3 +4,8 @@
 **/.idea
 **/cmake-build-debug
 CMakeLists.txt
+
+# Template
+template*
+
+Interview*
