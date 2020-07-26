@@ -74,3 +74,8 @@ string constructer:`string(const string &s, int pos, int n)`
 1. Can use reverse array to rotate array.
 2. Can use count in the `for` loop to simplify some logic.
 
+
+
+### 454 [4Sum II](https://leetcode.com/problems/4sum-ii/)
+
+1. Use **hash map** can reduce the computational cost sometimes.
