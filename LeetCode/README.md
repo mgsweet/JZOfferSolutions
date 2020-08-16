@@ -76,6 +76,23 @@ string constructer:`string(const string &s, int pos, int n)`
 
 
 
+### 343 [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+
+1. `priority_queue` need a `vector` for sort definition:
+
+   ```c++
+   priority_queue<int, vector<int>, greater<int> > q;
+   // Top is the smaller
+   // -1, -1, 2, 3, 4...
+   // Same as:
+   auto cmp = [](int lhs, int rhs) -> bool {return lhs > rhs;};
+   priority_queue<int, vector<int>, decltype(cmp) > q(cmp);
+   ```
+
+   
+
+
+
 ### 454 [4Sum II](https://leetcode.com/problems/4sum-ii/)
 
 1. Use **hash map** can reduce the computational cost sometimes.
