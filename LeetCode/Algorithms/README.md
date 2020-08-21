@@ -61,6 +61,11 @@ string constructer:`string(const string &s, int pos, int n)`
 2. Can directly change the value in the node to record the sum.
 3. Better to use `stack st({root})` to initialize the stack.
 
+### 0125 [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+1. use `isalnum()` can check whether a character is alphabet or number, i.e., checks for an alphanumeric character (0-9, A-Z, a-z).
+2. use `tolower()` can help get the int number of a lower case, it will only change upper case char.
+
 ### 148 [Sort List](https://leetcode.com/problems/sort-list/)
 
 1. Use Mergesort to achieve $O(NlogN)$ time using constant space complexity.
