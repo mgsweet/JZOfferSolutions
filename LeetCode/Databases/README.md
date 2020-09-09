@@ -1,6 +1,17 @@
 # Databases
 
+Database Design Steps:
+
+- Conceptual Design
+- Logical Design
+- Physical Design
+- Implementation
+- Instance
+
+
+
 ## MySQL
+
 1. Delete Duplicate example:
 	```mysql
 	# Write your MySQL query statement below
