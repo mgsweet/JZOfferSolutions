@@ -94,7 +94,13 @@ string constructer:`string(const string &s, int pos, int n)`
    priority_queue<int, vector<int>, decltype(cmp) > q(cmp);
    ```
 
-   
+
+
+
+### 414 [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
+
+- `priority_queue` default is less.
+- `priority_queue<int, vector<int>, greater<int>>`: 1, 2, 3, 4, 5 ... (1 is `top()`)
 
 
 
