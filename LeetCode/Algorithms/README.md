@@ -96,6 +96,17 @@ string constructer:`string(const string &s, int pos, int n)`
 
 
 
+##378 [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+
+- The fast way to make a customized comparator for priority_queue:
+
+  ```c++
+  auto compare = [](Type node1, Tpye node2){ return node1.attribute > node2.attribute }
+  priority_queue<int, vector<Type>, decltype(compare)> q(Type)
+  ```
+
+  
+
 
 ### 414 [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
 
