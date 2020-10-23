@@ -51,6 +51,18 @@ string constructer:`string(const string &s, int pos, int n)`
 1. `long long` use `labs` to get the absolute value of long long.
 2. `^` can use as XOR like `&&` and `||`.
 
+
+
+## 56 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+
+- The quickest way to use customized compare function in `sort`
+
+  ```c++
+  sort(v.begin(), v.end(), [](const vector<int> &v1, const vector<int> &v2){ return v1[0] < v2[0]; };
+  ```
+
+  
+
 ### 107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 
 1. No need to create pair to record the tree depth if u only want to separate different depth node. Use `nullptr ` !
@@ -118,3 +130,4 @@ string constructer:`string(const string &s, int pos, int n)`
 ### 454 [4Sum II](https://leetcode.com/problems/4sum-ii/)
 
 1. Use **hash map** can reduce the computational cost sometimes.
+
