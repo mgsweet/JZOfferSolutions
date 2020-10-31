@@ -6,6 +6,10 @@
 #define DRAFT_MYHELPER_H
 
 #include <vector>
+#include <string>
+#include <iostream>
+#include <algorithm>
+
 
 /**
  * TreeNode to help solve TreeNode problems.
@@ -93,4 +97,27 @@ std::vector<std::vector<int>> make_int_matrix(std::string str) {
   }
   return res;
 }
+
+
+TreeNode *assist_make_tree(std::vector<std::string> str_v, int i) {
+  if (i >= str_v.size() || str_v[i] == "null") return nullptr;
+  TreeNode *node = new TreeNode(stoi(str_v[i]));
+  node->left = assist_make_tree(str_v, i * 2 + 1);
+  node->right = assist_make_tree(str_v, i * 2 + 2);
+  return node;
+}
+
+
+TreeNode *make_tree(std::string str) {
+  //  [3,5,1,6,2,0,8,null,null,7,4]
+  str = str.substr(1, str.size() - 2);
+  std::vector<std::string> str_v;
+  std::stringstream ss(str);
+  while (std::getline(ss, str, ',')) {
+    str_v.push_back(str);
+  }
+  return assist_make_tree(str_v, 0);
+}
+
+
 #endif //DRAFT_MYHELPER_H
