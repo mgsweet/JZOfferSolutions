@@ -127,6 +127,14 @@ string constructer:`string(const string &s, int pos, int n)`
 
 
 
+### 438 [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
+
+- Idea: sliding window.
+- multiset
+  - To insert element: `s.insert()`
+  - To erase all `value` element:`s.erase(value)`
+  - To erase one value element: s.erase(s.find(value)) 
+
 ### 454 [4Sum II](https://leetcode.com/problems/4sum-ii/)
 
 1. Use **hash map** can reduce the computational cost sometimes.
