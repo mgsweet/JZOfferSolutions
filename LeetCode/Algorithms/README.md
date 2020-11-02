@@ -139,3 +139,8 @@ string constructer:`string(const string &s, int pos, int n)`
 
 1. Use **hash map** can reduce the computational cost sometimes.
 
+### 560 [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+
+- Sliding window only works on monotone situation. (Need to consider negative number when doing testing)
+- `hashmap[undefined] = 0` by default.
+
