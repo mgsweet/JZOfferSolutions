@@ -1,5 +1,5 @@
 # Fight for offers!
-This repo is mainly used to record the effort I made for getting better offers.
+This repo is mainly used to record the effort I made for getting better offers. 努力～！奋斗～！
 
 ## Coding everyday challenge!
 The repo contains my solutions and reviews of the algorithm tests I did every day.
