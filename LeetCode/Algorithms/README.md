@@ -144,3 +144,10 @@ string constructer:`string(const string &s, int pos, int n)`
 - Sliding window only works on monotone situation. (Need to consider negative number when doing testing)
 - `hashmap[undefined] = 0` by default.
 
+### 808 [Soup serving](https://leetcode.com/problems/soup-servings/discuss/121711/C%2B%2BJavaPython-When-N-greater-4800-just-return-1)
+
+- 25ml is annoying, use `N/25 + (N% 25 > 0 ? 1: 0)` to solve;
+- You don't need to come out with a bottom up method to use DP, just like the example of Fibonacci sequence, you can use Recursion with memory. `if memo[i][j] != default_val: return memo[i][j]`
+- For big N, just check some of the large N and then you will get the idea.
+- to use a 2d matrix in a function: `double func(double matrix[][500])` if the matrix is not dynamic allocated. 
+
