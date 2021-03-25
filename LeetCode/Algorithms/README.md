@@ -51,17 +51,14 @@ string constructer:`string(const string &s, int pos, int n)`
 1. `long long` use `labs` to get the absolute value of long long.
 2. `^` can use as XOR like `&&` and `||`.
 
-
-
-## 56 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+### 056 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
 - The quickest way to use customized compare function in `sort`
 
   ```c++
-  sort(v.begin(), v.end(), [](const vector<int> &v1, const vector<int> &v2){ return v1[0] < v2[0]; };
+  sort(v.begin(), v.end(), [](const vector<int> &v1, const vector<int> &v2){ return v1[0] < v2[0]; }; 
   ```
 
-  
 
 ### 107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 
@@ -73,7 +70,7 @@ string constructer:`string(const string &s, int pos, int n)`
 2. Can directly change the value in the node to record the sum.
 3. Better to use `stack st({root})` to initialize the stack.
 
-### 0125 [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+### 125 [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 1. use `isalnum()` can check whether a character is alphabet or number, i.e., checks for an alphanumeric character (0-9, A-Z, a-z).
 2. use `tolower()` can help get the int number of a lower case, it will only change upper case char.
@@ -106,9 +103,7 @@ string constructer:`string(const string &s, int pos, int n)`
    priority_queue<int, vector<int>, decltype(cmp) > q(cmp);
    ```
 
-
-
-##378 [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+### 378 [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 
 - The fast way to make a customized comparator for priority_queue:
 
