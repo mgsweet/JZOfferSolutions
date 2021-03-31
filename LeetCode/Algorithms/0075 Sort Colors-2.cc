@@ -5,13 +5,8 @@ public:
         int lhs = 0, rhs = nums.size() - 1;
         
         for (int i = 0; i <= rhs; ++i) {
-            if (nums[i] == 0) {
-                swap(nums[i], nums[lhs++]);
-            }
-            else if (nums[i] == 2) {
-                swap(nums[i], nums[rhs--]);
-                --i;
-            }
+            if (nums[i] == 0) swap(nums[i], nums[lhs++]);
+            else if (nums[i] == 2) swap(nums[i--], nums[rhs--]);
         }
     }
 };
