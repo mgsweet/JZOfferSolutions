@@ -1,33 +1,24 @@
+/*
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+    TreeNode(int x) :
+            val(x), left(NULL), right(NULL) {
+    }
+};*/
 class Solution {
 public:
-    TreeNode* Convert(TreeNode* pRootOfTree)
-    {
-        if (pRootOfTree == nullptr) return nullptr;
-        
-        TreeNode* lastNode = nullptr;
-        recConvert(pRootOfTree, &lastNode);
-        TreeNode* pHead = pRootOfTree;
-        while(pHead->left != nullptr) {
-            pHead = pHead->left;
-        }
-        return pHead;
+    TreeNode* Convert(TreeNode* pRootOfTree) {
+        return ReConvert(pRootOfTree, nullptr);
     }
     
-    void recConvert(TreeNode* pNode, TreeNode** lastNode) {
-        if (pNode == nullptr) return;
-            
-        if (pNode->left != nullptr) {
-            recConvert(pNode->left, lastNode);
-        }
-        
-        if (*lastNode != nullptr) {
-            (*lastNode)->right = pNode;
-        }
-        pNode->left = *lastNode;
-        *lastNode = pNode;
-        
-        if (pNode->right != nullptr) {
-            recConvert(pNode->right, lastNode);
-        }
+    TreeNode* ReConvert(TreeNode* root, TreeNode *link_to) {
+        if (!root) return link_to;
+        TreeNode *lp = ReConvert(root->left, root);
+        TreeNode *rp = ReConvert(root->right, link_to);
+        root->right = rp;
+        if (rp) rp->left = root;
+        return lp;
     }
 };
