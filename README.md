@@ -2,10 +2,20 @@
 This repo is mainly used to record the effort I made for getting better offers. 努力～！奋斗～！
 
 ## Coding everyday challenge!
-The repo contains my solutions and reviews of the algorithm tests I did every day.
+The repo contains my solutions and reviews of the algorithm questions I solve every day. Programming questions are inevitable in any programmer interview.
+
+>  Great works are preformed not by strength but by perseverance. ——Samuel Johnson
+
+### The offers I got by doing this
+
+2021
+
+- 字节跳动校园招聘春招 offer - 后端研发工程师
+- Shopee 校园招聘春招 offer - 后端研发工程师
+- Intel 中国校园招聘春招 offer - 云计算开发工程师
 
 ## Learning and review!
-The knowledge of computer science and IT would be easily forgotten if no review were provided. Also, the ability to learn quickly in life is important in this rapidly changing society. Here, I would also record the knowledge I may need for getting offer.
+The knowledge of computer science and IT could be easily forgotten if no review were provided. Also, the ability to learn quickly in life is important in this rapidly changing society. Here, I would also record the knowledge I may need for getting offers.
 
 ## Type faster!
 - Touch Typing learning website: [TypingClub](https://www.typingclub.com/)
