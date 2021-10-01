@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int S,E,W,c;
+   
+    cin >> S >> E >> W ;
+    while(S<=E)
+    {
+        c=(5.0/9)*(S-32);
+        cout<<S<<' '<<c<<endl;
+        S=S+W; 
+    }
+   
+
+       /*  Read input as specified in the question.
+	* Print output as specified in the question.
+	*/
+  
+}
