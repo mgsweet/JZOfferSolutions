@@ -1,15 +1,23 @@
+package main
+
 func lengthOfLongestSubstring(s string) int {
+	start, max := 0, 0
 	var checked [256]int
-	start := 0
-	res := 0
 	for i, c := range s {
 		if checked[c] > start {
 			start = checked[c]
 		}
-		if res < i-start+1 {
-			res = i - start + 1
+
+		if i-start+1 > max {
+			max = i - start + 1
 		}
+
 		checked[c] = i + 1
 	}
-	return res
+
+	return max
+}
+
+func main() {
+	lengthOfLongestSubstring(" ")
 }
